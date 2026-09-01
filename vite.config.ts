@@ -1,0 +1,47 @@
+import path from 'node:path'
+import process from 'node:process'
+import { loadEnv } from 'vite'
+import type { ConfigEnv, UserConfig } from 'vite'
+import { createVitePlugins } from './build/vite/index.ts'
+import { exclude, include } from './build/vite/optimize.ts'
+
+const API_PREFIX_RE = /^\/api/
+
+export default ({ mode }: ConfigEnv): UserConfig => {
+  const root = process.cwd()
+  const env = loadEnv(mode, root)
+
+  return {
+    base: env.VITE_APP_PUBLIC_PATH,
+    plugins: createVitePlugins(mode),
+
+    server: {
+      host: true,
+      port: 3000,
+      proxy: {
+        '/api': {
+          target: '', // Your backend API base URL
+          ws: false,
+          changeOrigin: true,
+          rewrite: requestPath => requestPath.replace(API_PREFIX_RE, ''),
+        },
+      },
+    },
+
+    resolve: {
+      alias: {
+        '@': path.join(import.meta.dirname, './src'),
+        '~': path.join(import.meta.dirname, './src/assets'),
+        '~root': path.join(import.meta.dirname, '.'),
+      },
+    },
+
+    build: {
+      cssCodeSplit: false,
+      chunkSizeWarningLimit: 2048,
+      outDir: env.VITE_APP_OUT_DIR || 'dist',
+    },
+
+    optimizeDeps: { include, exclude },
+  }
+}
