@@ -11,6 +11,7 @@
     "Charts": "📊 图表",
     "UnoCSS": "⚡ UnoCSS",
     "Counter": "🍍 状态持久化",
+    "Todo": "✅ 待办清单",
     "KeepAlive": "♻️ 页面缓存",
     "ScrollCache": "📍 滚动缓存",
     "Login": "🧑‍💻 登录",
@@ -123,6 +124,17 @@
     "gettingCode": "获取中",
     "sendCodeSuccess": "已发送，验证码为",
     "registerSuccess": "注册成功"
+  },
+
+  "todo": {
+    "title": "待办清单",
+    "placeholder": "想做点什么？",
+    "add": "添加",
+    "empty": "还没有待办，添加一个吧",
+    "delete": "删除",
+    "deleteConfirm": "确认删除该待办吗？",
+    "emptyTitle": "请输入内容",
+    "fail": "操作失败，请重试"
   },
 
   "settings": {

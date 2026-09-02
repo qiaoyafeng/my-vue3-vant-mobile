@@ -11,6 +11,7 @@
     "Charts": "📊 Charts",
     "UnoCSS": "⚡ UnoCSS",
     "Counter": "🍍 Persistent State",
+    "Todo": "✅ Todo",
     "KeepAlive": "♻️ Page Cache",
     "ScrollCache": "📍 Scroll Cache",
     "Login": "🧑‍💻 Login",
@@ -123,6 +124,17 @@
     "gettingCode": "Getting code",
     "sendCodeSuccess": "Sent, the code is",
     "registerSuccess": "Register succeeded"
+  },
+
+  "todo": {
+    "title": "Todo List",
+    "placeholder": "What needs to be done?",
+    "add": "Add",
+    "empty": "No todos yet. Add one!",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this todo?",
+    "emptyTitle": "Please enter something",
+    "fail": "Action failed, please retry"
   },
 
   "settings": {

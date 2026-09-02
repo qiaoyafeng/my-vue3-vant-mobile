@@ -1,10 +1,5 @@
 import request from '@/utils/request'
-
-export interface ApiResult<T> {
-  code: number
-  msg: string
-  data: T
-}
+import type { ApiResult } from './types'
 
 export interface LoginData {
   email: string

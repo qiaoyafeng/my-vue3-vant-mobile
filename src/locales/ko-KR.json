@@ -11,6 +11,7 @@
     "Charts": "📊 차트",
     "UnoCSS": "⚡ UnoCSS",
     "Counter": "🍍 상태 유지",
+    "Todo": "✅ 할 일",
     "KeepAlive": "♻️ 페이지 캐시",
     "ScrollCache": "📍 스크롤 캐시",
     "Login": "🧑‍💻 로그인",
@@ -123,6 +124,17 @@
     "gettingCode": "전송 중",
     "sendCodeSuccess": "전송되었습니다. 인증 코드는",
     "registerSuccess": "회원가입이 완료되었습니다"
+  },
+
+  "todo": {
+    "title": "할 일 목록",
+    "placeholder": "무엇을 할까요?",
+    "add": "추가",
+    "empty": "할 일이 없습니다. 하나 추가해 보세요!",
+    "delete": "삭제",
+    "deleteConfirm": "이 할 일을 삭제할까요?",
+    "emptyTitle": "내용을 입력하세요",
+    "fail": "작업에 실패했습니다. 다시 시도하세요"
   },
 
   "settings": {
