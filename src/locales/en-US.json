@@ -132,6 +132,7 @@
     "add": "Add",
     "empty": "No todos yet. Add one!",
     "delete": "Delete",
+    "editTitle": "Edit Todo",
     "deleteConfirm": "Delete this todo?",
     "emptyTitle": "Please enter something",
     "fail": "Action failed, please retry"

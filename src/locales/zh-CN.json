@@ -132,6 +132,7 @@
     "add": "添加",
     "empty": "还没有待办，添加一个吧",
     "delete": "删除",
+    "editTitle": "编辑待办",
     "deleteConfirm": "确认删除该待办吗？",
     "emptyTitle": "请输入内容",
     "fail": "操作失败，请重试"

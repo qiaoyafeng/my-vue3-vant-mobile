@@ -49,7 +49,17 @@ export default defineMock([
       if (!todo)
         return { code: 1, msg: 'todo not found', data: null }
 
-      todo.done = Boolean(request.body?.done)
+      // 部分更新语义：字段存在才生效
+      if (request.body?.title !== undefined) {
+        const title = String(request.body.title).trim()
+        if (!title)
+          return { code: 1, msg: 'title cannot be empty', data: null }
+
+        todo.title = title
+      }
+      if (request.body?.done !== undefined)
+        todo.done = Boolean(request.body.done)
+
       return ok(todo)
     },
   },

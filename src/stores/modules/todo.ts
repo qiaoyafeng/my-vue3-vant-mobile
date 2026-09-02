@@ -29,7 +29,14 @@ export const useTodoStore = defineStore('todo', () => {
   }
 
   const toggle = async (id: number, done: boolean) => {
-    const { data } = await updateTodoApi(id, done)
+    const { data } = await updateTodoApi(id, { done })
+    const index = todos.value.findIndex(item => item.id === id)
+    if (index !== -1)
+      todos.value[index] = data
+  }
+
+  const rename = async (id: number, title: string) => {
+    const { data } = await updateTodoApi(id, { title })
     const index = todos.value.findIndex(item => item.id === id)
     if (index !== -1)
       todos.value[index] = data
@@ -46,6 +53,7 @@ export const useTodoStore = defineStore('todo', () => {
     load,
     add,
     toggle,
+    rename,
     remove,
   }
 })
