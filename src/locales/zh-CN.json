@@ -15,6 +15,7 @@
     "KeepAlive": "♻️ 页面缓存",
     "ScrollCache": "📍 滚动缓存",
     "Face": "🙂 人脸采集",
+    "Chat": "💬 AI 聊天",
     "Login": "🧑‍💻 登录",
     "Register": "🧑‍💻 注册",
     "ForgotPassword": "❓ 忘记密码",
@@ -161,6 +162,18 @@
     "errorModel": "模型加载失败，请重试",
     "uploadSuccess": "采集数据上传成功",
     "uploadFail": "采集数据上传失败"
+  },
+
+  "chat": {
+    "placeholder": "说点什么…（Enter 发送）",
+    "send": "发送",
+    "stop": "停止",
+    "clear": "清空对话",
+    "clearConfirm": "确认清空当前对话？",
+    "emptyHint": "开始你的第一次对话吧",
+    "loginRequired": "登录后即可开始对话",
+    "goLogin": "去登录",
+    "sendFailed": "发送失败"
   },
 
   "settings": {

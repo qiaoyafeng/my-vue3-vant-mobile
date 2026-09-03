@@ -15,6 +15,7 @@
     "KeepAlive": "♻️ Page Cache",
     "ScrollCache": "📍 Scroll Cache",
     "Face": "🙂 Face Capture",
+    "Chat": "💬 AI Chat",
     "Login": "🧑‍💻 Login",
     "Register": "🧑‍💻 Register",
     "ForgotPassword": "❓ Forgot Password",
@@ -161,6 +162,18 @@
     "errorModel": "Model loading failed, please retry",
     "uploadSuccess": "Session uploaded successfully",
     "uploadFail": "Session upload failed"
+  },
+
+  "chat": {
+    "placeholder": "Say something... (Enter to send)",
+    "send": "Send",
+    "stop": "Stop",
+    "clear": "Clear conversation",
+    "clearConfirm": "Clear this conversation?",
+    "emptyHint": "Start your first conversation",
+    "loginRequired": "Log in to start chatting",
+    "goLogin": "Log in",
+    "sendFailed": "Failed to send"
   },
 
   "settings": {

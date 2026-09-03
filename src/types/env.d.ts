@@ -2,6 +2,9 @@
 
 interface ImportMetaEnv {
   readonly VITE_FACE_FRAME_COUNT?: string
+  readonly VITE_OPENAI_BASE_URL?: string
+  readonly VITE_OPENAI_MODEL?: string
+  readonly VITE_OPENAI_SYSTEM_PROMPT?: string
 }
 
 declare module '*.vue' {

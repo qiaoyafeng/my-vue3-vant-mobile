@@ -13,6 +13,7 @@ const menuItems = computed(() => ([
   { title: t('navbar.Mock'), route: 'mock' },
   { title: t('navbar.Todo'), route: 'todo' },
   { title: t('navbar.Face'), route: 'face' },
+  { title: t('navbar.Chat'), route: 'chat' },
   { title: t('navbar.Charts'), route: 'charts' },
   { title: t('navbar.UnoCSS'), route: 'unocss' },
   { title: t('navbar.Counter'), route: 'counter' },

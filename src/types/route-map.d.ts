@@ -52,6 +52,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    'Chat': RouteRecordInfo<
+      'Chat',
+      '/chat',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     'Counter': RouteRecordInfo<
       'Counter',
       '/counter',
@@ -168,6 +175,14 @@ declare module 'vue-router/auto-routes' {
     'src/pages/charts/index.vue': {
       routes:
         | 'Charts'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'src/pages/chat/index.vue': {
+      routes:
+        | 'Chat'
       views:
         | never
       pathParamNames:

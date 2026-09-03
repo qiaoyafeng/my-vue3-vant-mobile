@@ -15,6 +15,7 @@
     "KeepAlive": "♻️ 페이지 캐시",
     "ScrollCache": "📍 스크롤 캐시",
     "Face": "🙂 얼굴 수집",
+    "Chat": "💬 AI 채팅",
     "Login": "🧑‍💻 로그인",
     "Register": "🧑‍💻 회원가입",
     "ForgotPassword": "❓ 비밀번호 찾기",
@@ -161,6 +162,18 @@
     "errorModel": "모델 로딩 실패, 다시 시도해 주세요",
     "uploadSuccess": "수집 데이터 업로드 성공",
     "uploadFail": "수집 데이터 업로드 실패"
+  },
+
+  "chat": {
+    "placeholder": "무엇이든 입력... (Enter 전송)",
+    "send": "전송",
+    "stop": "정지",
+    "clear": "대화 지우기",
+    "clearConfirm": "현재 대화를 지울까요?",
+    "emptyHint": "첫 대화를 시작해 보세요",
+    "loginRequired": "로그인 후 대화할 수 있어요",
+    "goLogin": "로그인",
+    "sendFailed": "전송 실패"
   },
 
   "settings": {
