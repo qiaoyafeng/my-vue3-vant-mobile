@@ -14,6 +14,7 @@
     "Todo": "✅ 待办清单",
     "KeepAlive": "♻️ 页面缓存",
     "ScrollCache": "📍 滚动缓存",
+    "Face": "🙂 人脸采集",
     "Login": "🧑‍💻 登录",
     "Register": "🧑‍💻 注册",
     "ForgotPassword": "❓ 忘记密码",
@@ -136,6 +137,30 @@
     "deleteConfirm": "确认删除该待办吗？",
     "emptyTitle": "请输入内容",
     "fail": "操作失败，请重试"
+  },
+
+  "face": {
+    "previewPlaceholder": "点击下方按钮开启摄像头",
+    "start": "开启摄像头",
+    "progressLabel": "采集进度",
+    "statusLabel": "状态",
+    "progress": "{current} / {total} 帧",
+    "phase": {
+      "idle": "待开始",
+      "opening": "摄像头开启中…",
+      "loading": "模型加载中…",
+      "running": "采集中",
+      "uploading": "上传中…",
+      "done": "已完成",
+      "failed": "已失败"
+    },
+    "errorInsecure": "当前环境不安全，无法访问摄像头（需 HTTPS 或 localhost）",
+    "errorDenied": "摄像头权限被拒绝，请在浏览器设置中开启",
+    "errorNotFound": "未检测到可用摄像头",
+    "errorUnknown": "摄像头开启失败，请重试",
+    "errorModel": "模型加载失败，请重试",
+    "uploadSuccess": "采集数据上传成功",
+    "uploadFail": "采集数据上传失败"
   },
 
   "settings": {

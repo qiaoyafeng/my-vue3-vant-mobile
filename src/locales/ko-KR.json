@@ -14,6 +14,7 @@
     "Todo": "✅ 할 일",
     "KeepAlive": "♻️ 페이지 캐시",
     "ScrollCache": "📍 스크롤 캐시",
+    "Face": "🙂 얼굴 수집",
     "Login": "🧑‍💻 로그인",
     "Register": "🧑‍💻 회원가입",
     "ForgotPassword": "❓ 비밀번호 찾기",
@@ -136,6 +137,30 @@
     "deleteConfirm": "이 할 일을 삭제할까요?",
     "emptyTitle": "내용을 입력하세요",
     "fail": "작업에 실패했습니다. 다시 시도하세요"
+  },
+
+  "face": {
+    "previewPlaceholder": "아래 버튼을 눌러 카메라를 시작하세요",
+    "start": "카메라 시작",
+    "progressLabel": "수집 진행률",
+    "statusLabel": "상태",
+    "progress": "{current} / {total} 프레임",
+    "phase": {
+      "idle": "대기 중",
+      "opening": "카메라 열기 중…",
+      "loading": "모델 로딩 중…",
+      "running": "수집 중",
+      "uploading": "업로드 중…",
+      "done": "완료됨",
+      "failed": "실패함"
+    },
+    "errorInsecure": "안전하지 않은 환경입니다(HTTPS 또는 localhost 필요)",
+    "errorDenied": "카메라 권한이 거부되었습니다. 브라우저 설정에서 허용해 주세요",
+    "errorNotFound": "사용 가능한 카메라가 없습니다",
+    "errorUnknown": "카메라를 열지 못했습니다. 다시 시도해 주세요",
+    "errorModel": "모델 로딩 실패, 다시 시도해 주세요",
+    "uploadSuccess": "수집 데이터 업로드 성공",
+    "uploadFail": "수집 데이터 업로드 실패"
   },
 
   "settings": {

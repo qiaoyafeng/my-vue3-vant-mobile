@@ -182,6 +182,8 @@ declare global {
   const useEventListener: typeof import('@vueuse/core').useEventListener
   const useEventSource: typeof import('@vueuse/core').useEventSource
   const useEyeDropper: typeof import('@vueuse/core').useEyeDropper
+  const useFaceCamera: typeof import('../composables/useFaceCamera').useFaceCamera
+  const useFaceLandmarker: typeof import('../composables/useFaceLandmarker').useFaceLandmarker
   const useFavicon: typeof import('@vueuse/core').useFavicon
   const useFetch: typeof import('@vueuse/core').useFetch
   const useFileDialog: typeof import('@vueuse/core').useFileDialog
@@ -321,4 +323,10 @@ declare global {
   // @ts-ignore
   export type { Component, Slot, Slots, ComponentPublicInstance, ComputedRef, DirectiveBinding, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, ShallowRef, MaybeRef, MaybeRefOrGetter, VNode, WritableComputedRef } from 'vue'
   import('vue')
+  // @ts-ignore
+  export type { FaceCameraErrorType } from '../composables/useFaceCamera'
+  import('../composables/useFaceCamera')
+  // @ts-ignore
+  export type { FacePhase, FaceStartErrorType } from '../composables/useFaceLandmarker'
+  import('../composables/useFaceLandmarker')
 }

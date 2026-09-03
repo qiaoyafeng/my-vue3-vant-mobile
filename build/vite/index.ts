@@ -11,6 +11,7 @@ import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'vue-router/unplugin'
 import VueRouter from 'vue-router/vite'
 import { mockDevServerPlugin } from 'vite-plugin-mock-dev-server'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 import { VitePWA } from 'vite-plugin-pwa'
 import Sitemap from 'vite-plugin-sitemap'
 import VueDevTools from 'vite-plugin-vue-devtools'
@@ -43,7 +44,20 @@ export function createVitePlugins(mode: string) {
     }),
 
     // https://github.com/pengzhanbo/vite-plugin-mock-dev-server
-    mockDevServerPlugin(),
+    // face 会话 JSON 约 1-2MB，放宽 co-body 默认 1mb 的 json 限制
+    mockDevServerPlugin({ bodyParserOptions: { jsonLimit: '10mb' } }),
+
+    // 将 MediaPipe WASM 从 node_modules 复制为静态资产（dev 与 build 均生效）
+    // stripBase: 扁平复制，去掉 src 的目录层级，使 /wasm/* 直接可访问
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'node_modules/@mediapipe/tasks-vision/wasm/*',
+          dest: 'wasm',
+          rename: { stripBase: true },
+        },
+      ],
+    }),
 
     // https://github.com/antfu/unplugin-vue-components
     Components({

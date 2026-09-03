@@ -1,5 +1,9 @@
 /// <reference types="vite/client" />
 
+interface ImportMetaEnv {
+  readonly VITE_FACE_FRAME_COUNT?: string
+}
+
 declare module '*.vue' {
   import type { DefineComponent } from 'vue'
 

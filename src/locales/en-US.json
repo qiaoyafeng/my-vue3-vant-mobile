@@ -14,6 +14,7 @@
     "Todo": "✅ Todo",
     "KeepAlive": "♻️ Page Cache",
     "ScrollCache": "📍 Scroll Cache",
+    "Face": "🙂 Face Capture",
     "Login": "🧑‍💻 Login",
     "Register": "🧑‍💻 Register",
     "ForgotPassword": "❓ Forgot Password",
@@ -136,6 +137,30 @@
     "deleteConfirm": "Delete this todo?",
     "emptyTitle": "Please enter something",
     "fail": "Action failed, please retry"
+  },
+
+  "face": {
+    "previewPlaceholder": "Tap the button below to start the camera",
+    "start": "Start Camera",
+    "progressLabel": "Progress",
+    "statusLabel": "Status",
+    "progress": "{current} / {total} frames",
+    "phase": {
+      "idle": "Ready",
+      "opening": "Opening camera…",
+      "loading": "Loading model…",
+      "running": "Capturing",
+      "uploading": "Uploading…",
+      "done": "Completed",
+      "failed": "Failed"
+    },
+    "errorInsecure": "Insecure context: camera requires HTTPS or localhost",
+    "errorDenied": "Camera permission denied, please enable it in browser settings",
+    "errorNotFound": "No available camera detected",
+    "errorUnknown": "Failed to open camera, please retry",
+    "errorModel": "Model loading failed, please retry",
+    "uploadSuccess": "Session uploaded successfully",
+    "uploadFail": "Session upload failed"
   },
 
   "settings": {

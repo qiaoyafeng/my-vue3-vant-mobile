@@ -20,8 +20,9 @@ export default antfu(
   {
     ignores: [
       '.github/**',
-      // docs/ 为纯文档目录（设计文档、实现计划），不作为 lint 目标
+      // docs/ 与 .qoder/ 为纯文档目录（设计文档、实现计划），不作为 lint 目标
       'docs/**',
+      '.qoder/**',
     ],
   },
 )

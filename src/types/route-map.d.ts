@@ -59,6 +59,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    'Face': RouteRecordInfo<
+      'Face',
+      '/face',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     'ForgotPassword': RouteRecordInfo<
       'ForgotPassword',
       '/forgot-password',
@@ -169,6 +176,14 @@ declare module 'vue-router/auto-routes' {
     'src/pages/counter/index.vue': {
       routes:
         | 'Counter'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'src/pages/face/index.vue': {
+      routes:
+        | 'Face'
       views:
         | never
       pathParamNames:
